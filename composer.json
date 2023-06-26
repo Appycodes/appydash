@@ -1,0 +1,26 @@
+{
+    "name": "appycodes/appydash",
+    "description": "A dashboard generator for Laravel using tailwind Breeze and alpinejs",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Appycodes\\Appydash\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Appycodes\\Appydash\\AppydashServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Rakesh Roy",
+            "email": "rakesh@appycodes.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "version": "0.0.3"
+}

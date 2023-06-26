@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+    --sidebar-width: 15rem;
+    --collapsed-sidebar-width: 0px;
+}
+
+.logo-ds{
+    -webkit-filter: drop-shadow(5px 5px 5px #eee);
+    filter: drop-shadow(5px 5px 5px #eee);
+}
+
+.sidebar-icon{
+    @apply flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white
+}
+.sidebar-number{
+    @apply inline-flex justify-center items-center p-3 ml-3 w-3 h-3 text-sm font-medium text-blue-600 bg-blue-200 rounded-full dark:bg-blue-900 dark:text-blue-200
+}
+
+.sidebar-open{
+    @apply translate-x-0 max-w-[20em] shadow-2xl lg:max-w-[var(--sidebar-width)]
+}
+
+.sidebar-close{
+    @apply -translate-x-full lg:translate-x-0 lg:max-w-[var(--collapsed-sidebar-width)] lg:shadow-2xl rtl:lg:-translate-x-0 rtl:translate-x-full
+}
